@@ -1,17 +1,18 @@
 // Add your code here
-let userData = {
-    name: "John",
-    email: "john@gmail.com"
-};
-let postData = {
-    method: "POST",
-    headers: {
-        "Content-Type": "application/json",
-        "Accept": "application/json"
-    },
-    body: JSON.stringify(userData)
-};
+
+
 function submitData(){
+    let postData = {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+        },
+        body: JSON.stringify({
+            name: "Steve",
+            email: "steve@steve.com" 
+        })
+    };
   fetch("http://localhost:3000/users", postData);
 };
 //Challlenges/test
