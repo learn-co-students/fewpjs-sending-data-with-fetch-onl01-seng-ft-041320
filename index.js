@@ -21,9 +21,9 @@ function submitData(){
 };
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    submitData();
-   })
+// document.addEventListener("DOMContentLoaded", function () {
+//     submitData();
+//    })
 
 //Challlenges/test
 //In submitData, write a valid POST request to http://localhost:3000/users using fetch(). [x]
@@ -35,4 +35,4 @@ document.addEventListener("DOMContentLoaded", function () {
 //Use then() call to access the Response object and 
 //use its built in json() method to parse the contents of the body property. [x]
 //Use a second then() to access this newly converted object. 
-//calling submitData in the console should cause an id number to appear on the page.[x]
+//calling submitData in the console should cause an id number to appear on the page.[]
