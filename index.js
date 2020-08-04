@@ -11,12 +11,16 @@ function submitData(){
         email: "steve@steve.com"}
     )
 };
-  fetch("http://localhost:3000/users", postData)
+ return fetch("http://localhost:3000/users", postData)
     .then(function(response){
       return response.json();
     })
     .then(function(object){
         document.write(object.id);
+    })
+    .catch(function(error){
+        alert("Bad things! Ragnarők!");
+       document.write(error.message);
     });
 };
 
@@ -35,4 +39,7 @@ function submitData(){
 //Use then() call to access the Response object and 
 //use its built in json() method to parse the contents of the body property. [x]
 //Use a second then() to access this newly converted object. 
-//calling submitData in the console should cause an id number to appear on the page.[]
+//calling submitData in the console should cause an id number to appear on the page.[x]
+//TEST 3
+//after the two then() calls on your fetch() request, add a catch() []
+//Append error message to the DOM when catch() is called. []
